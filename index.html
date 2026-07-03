@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">ТОО «Архстрой» — наружная реклама и печать</title>
+  <meta name="description" content="ТОО Архстрой: наружная реклама, вывески, баннеры, УФ-печать, широкоформатная печать, фото на холсте, фрезерная и лазерная резка в Петропавловске." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Архстрой">
+        <img src="assets/logo.png" alt="ТОО Архстрой">
+        <span>
+          <b data-i18n="brand.name">ТОО «Архстрой»</b>
+          <small data-i18n="brand.sub">Петропавловск · наружная реклама</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#services" data-i18n="nav.services">Услуги</a>
+        <a href="#portfolio" data-i18n="nav.works">Работы</a>
+        <a href="#quiz" data-i18n="nav.request">Заявка</a>
+        <a href="#production" data-i18n="nav.production">Производство</a>
+        <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" aria-label="Выбор языка">
+          <button class="active" data-lang="ru">RU</button>
+          <button data-lang="kz">KZ</button>
+        </div>
+        <a class="header-call magnetic" href="tel:+77776557272">+7 777 655 72 72</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Открыть меню">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid-bg"></div>
+      <div class="gold-orb orb-a"></div>
+      <div class="gold-orb orb-b"></div>
+      <div class="gold-line line-a"></div>
+      <div class="gold-line line-b"></div>
+
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span><b data-i18n="hero.eyebrow">Наружная реклама · печать · производство</b></div>
+          <h1 data-i18n="hero.title">Реклама, которую видно сразу</h1>
+          <p data-i18n="hero.text">
+            Вывески, баннеры, УФ-печать, фото на холсте, таблички,
+            широкоформатная печать, фрезерная и лазерная обработка.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-gold magnetic" href="#quiz" data-i18n="hero.cta">Получить расчет</a>
+            <a class="btn btn-glass magnetic" href="#portfolio" data-i18n="hero.works">Смотреть работы</a>
+          </div>
+
+          <div class="feature-row">
+            <div><strong data-i18n="feature.uv">УФ-печать</strong><span data-i18n="feature.uvSub">печать на разных поверхностях</span></div>
+            <div><strong data-i18n="feature.wide">Широкоформат</strong><span data-i18n="feature.wideSub">баннеры и крупная печать</span></div>
+            <div><strong data-i18n="feature.cnc">Фрезер / лазер</strong><span data-i18n="feature.cncSub">обработка материалов</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art reveal" id="heroArt">
+          <button class="hero-photo main-photo js-lightbox" data-gallery-index="0" data-full="assets/works/legenda.jpg" data-title-ru="Вывеска LEGENDA" data-title-kz="LEGENDA маңдайшасы">
+            <img src="assets/works/legenda.jpg" alt="Вывеска LEGENDA">
+          </button>
+          <button class="hero-photo small-photo one js-lightbox" data-gallery-index="4" data-full="assets/works/uv_glass.jpg" data-title-ru="УФ-печать на стекле" data-title-kz="Әйнекке УФ-баспа">
+            <img src="assets/works/uv_glass.jpg" alt="УФ-печать на стекле">
+          </button>
+          <button class="hero-photo small-photo two js-lightbox" data-gallery-index="1" data-full="assets/works/lighting.jpg" data-title-ru="Подсветка здания" data-title-kz="Ғимаратты жарықтандыру">
+            <img src="assets/works/lighting.jpg" alt="Подсветка здания">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Услуги">
+      <div class="marquee-track">
+        <span data-i18n="marquee.signs">Вывески</span>
+        <span data-i18n="marquee.uv">УФ-печать</span>
+        <span data-i18n="marquee.banners">Баннеры</span>
+        <span data-i18n="marquee.canvas">Фото на холсте</span>
+        <span data-i18n="marquee.cnc">Фрезерный станок</span>
+        <span data-i18n="marquee.laser">Лазерный станок</span>
+        <span data-i18n="marquee.mount">Монтаж</span>
+        <span data-i18n="marquee.design">Дизайн</span>
+        <span data-i18n="marquee.signs">Вывески</span>
+        <span data-i18n="marquee.uv">УФ-печать</span>
+        <span data-i18n="marquee.banners">Баннеры</span>
+        <span data-i18n="marquee.canvas">Фото на холсте</span>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow"><span></span><b data-i18n="services.eyebrow">Услуги</b></div>
+          <h2 data-i18n="services.title">Что можно заказать</h2>
+          <p data-i18n="services.text">Без статичного прайса: стоимость зависит от размера, материала, сложности, монтажа и сроков.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal tilt">
+            <span>01</span>
+            <h3 data-i18n="service.signs.title">Вывески и объемные буквы</h3>
+            <p data-i18n="service.signs.text">Фасадные и интерьерные решения, подсветка, дизайн и монтаж.</p>
+          </article>
+          <article class="service-card reveal tilt">
+            <span>02</span>
+            <h3 data-i18n="service.uv.title">УФ-печать</h3>
+            <p data-i18n="service.uv.text">Печать на стекле, пластике, сувенирах и других материалах.</p>
+          </article>
+          <article class="service-card reveal tilt">
+            <span>03</span>
+            <h3 data-i18n="service.banners.title">Баннеры и широкоформатная печать</h3>
+            <p data-i18n="service.banners.text">Крупная печать для фасадов, витрин, акций и навигации.</p>
+          </article>
+          <article class="service-card reveal tilt">
+            <span>04</span>
+            <h3 data-i18n="service.canvas.title">Фото на холсте</h3>
+            <p data-i18n="service.canvas.text">Печать изображения и натяжка на подрамник.</p>
+          </article>
+          <article class="service-card reveal tilt">
+            <span>05</span>
+            <h3 data-i18n="service.cnc.title">Фрезерная обработка</h3>
+            <p data-i18n="service.cnc.text">Рекламные детали, таблички, заготовки и элементы оформления.</p>
+          </article>
+          <article class="service-card reveal tilt">
+            <span>06</span>
+            <h3 data-i18n="service.laser.title">Лазерная резка</h3>
+            <p data-i18n="service.laser.text">Точная резка, декоративные элементы и сувенирная продукция.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="portfolio-head reveal">
+          <div>
+            <div class="eyebrow"><span></span><b data-i18n="portfolio.eyebrow">Портфолио</b></div>
+            <h2 data-i18n="portfolio.title">Работы из ваших материалов</h2>
+            <p data-i18n="portfolio.text">Здесь только те фото, которые вы передали. Ничего лишнего и выдуманного.</p>
+          </div>
+          <div class="filters" id="filters">
+            <button class="active" data-filter="all" data-i18n="filter.all">Все</button>
+            <button data-filter="sign" data-i18n="filter.signs">Вывески</button>
+            <button data-filter="light" data-i18n="filter.light">Подсветка</button>
+            <button data-filter="uv" data-i18n="filter.uv">УФ-печать</button>
+            <button data-filter="wide" data-i18n="filter.wide">Баннеры</button>
+            <button data-filter="canvas" data-i18n="filter.canvas">Холсты</button>
+          </div>
+        </div>
+
+        <div class="work-grid" id="workGrid">
+          <article class="work-card big reveal tilt" data-category="light">
+            <button class="work-image split js-lightbox" data-gallery-index="2" data-full="assets/works/city1.jpg" data-title-ru="Архитектурная подсветка" data-title-kz="Архитектуралық жарықтандыру">
+              <img src="assets/works/city1.jpg" alt="Архитектурная подсветка">
+              <img src="assets/works/city2.jpg" alt="Архитектурная подсветка второй ракурс">
+            </button>
+            <div class="work-content">
+              <span data-i18n="work.light.type">Подсветка</span>
+              <h3 data-i18n="work.light.title">Архитектурная подсветка</h3>
+              <p data-i18n="work.light.text">Два изображения объединены как один проект.</p>
+              <a href="#quiz" data-i18n="work.cta">Хочу похожее</a>
+            </div>
+          </article>
+
+          <article class="work-card reveal tilt" data-category="sign">
+            <button class="work-image js-lightbox" data-gallery-index="0" data-full="assets/works/legenda.jpg" data-title-ru="Вывеска LEGENDA" data-title-kz="LEGENDA маңдайшасы">
+              <img src="assets/works/legenda.jpg" alt="Вывеска LEGENDA">
+            </button>
+            <div class="work-content">
+              <span data-i18n="work.sign.type">Вывеска</span>
+              <h3>LEGENDA</h3>
+              <p data-i18n="work.sign.text">Фасадное оформление и наружная реклама.</p>
+              <a href="#quiz" data-i18n="work.cta">Хочу похожее</a>
+            </div>
+          </article>
+
+          <article class="work-card reveal tilt" data-category="light">
+            <button class="work-image js-lightbox" data-gallery-index="1" data-full="assets/works/lighting.jpg" data-title-ru="Подсветка здания" data-title-kz="Ғимаратты жарықтандыру">
+              <img src="assets/works/lighting.jpg" alt="Подсветка здания">
+            </button>
+            <div class="work-content">
+              <span data-i18n="work.light.type">Подсветка</span>
+              <h3 data-i18n="work.buildingLight.title">Световое оформление</h3>
+              <p data-i18n="work.buildingLight.text">Подсветка здания и фасада.</p>
+              <a href="#quiz" data-i18n="work.cta">Хочу похожее</a>
+            </div>
+          </article>
+
+          <article class="work-card reveal tilt" data-category="uv">
+            <button class="work-image js-lightbox" data-gallery-index="4" data-full="assets/works/uv_glass.jpg" data-title-ru="УФ-печать на стекле" data-title-kz="Әйнекке УФ-баспа">
+              <img src="assets/works/uv_glass.jpg" alt="УФ-печать на стекле">
+            </button>
+            <div class="work-content">
+              <span data-i18n="work.uv.type">УФ-печать</span>
+              <h3 data-i18n="work.uvGlass.title">Печать на стекле</h3>
+              <p data-i18n="work.uvGlass.text">Печать на твердой поверхности.</p>
+              <a href="#quiz" data-i18n="work.cta">Хочу похожее</a>
+            </div>
+          </article>
+
+          <article class="work-card reveal tilt" data-category="uv">
+            <button class="work-image js-lightbox" data-gallery-index="5" data-full="assets/works/uv_tiles.jpg" data-title-ru="УФ-печать на изделиях" data-title-kz="Бұйымдарға УФ-баспа">
+              <img src="assets/works/uv_tiles.jpg" alt="УФ-печать на изделиях">
+            </button>
+            <div class="work-content">
+              <span data-i18n="work.uv.type">УФ-печать</span>
+              <h3 data-i18n="work.uvItems.title">Печать на изделиях</h3>
+              <p data-i18n="work.uvItems.text">Для декора, сувениров и рекламной продукции.</p>
+              <a href="#quiz" data-i18n="work.cta">Хочу похожее</a>
+            </div>
+          </article>
+
+          <article class="work-card reveal tilt" data-category="wide">
+            <button class="work-image js-lightbox" data-gallery-index="6" data-full="assets/works/banner_family.jpg" data-title-ru="Фасадный баннер" data-title-kz="Қасбет баннері">
+              <img src="assets/works/banner_family.jpg" alt="Фасадный баннер">
+            </button>
+            <div class="work-content">
+              <span data-i18n="work.banner.type">Баннер</span>
+              <h3 data-i18n="work.banner.title">Широкоформатная печать</h3>
+              <p data-i18n="work.banner.text">Большой рекламный баннер на фасаде.</p>
+              <a href="#quiz" data-i18n="work.cta">Хочу похожее</a>
+            </div>
+          </article>
+
+          <article class="work-card big reveal tilt" data-category="canvas">
+            <button class="work-image split js-lightbox" data-gallery-index="7" data-full="assets/works/canvas1.jpg" data-title-ru="Фото на холсте" data-title-kz="Кенепке фото басу">
+              <img src="assets/works/canvas1.jpg" alt="Фото на холсте">
+              <img src="assets/works/canvas2.jpg" alt="Фото на холсте второй ракурс">
+            </button>
+            <div class="work-content">
+              <span data-i18n="work.canvas.type">Фото на холсте</span>
+              <h3 data-i18n="work.canvas.title">Печать и натяжка</h3>
+              <p data-i18n="work.canvas.text">1 и 2 изображение объединены в один проект.</p>
+              <a href="#quiz" data-i18n="work.cta">Хочу похожее</a>
+            </div>
+          </article>
+
+          <article class="work-card reveal tilt" data-category="light">
+            <button class="work-image js-lightbox" data-gallery-index="3" data-full="assets/works/theatre.jpg" data-title-ru="Световое оформление здания" data-title-kz="Ғимаратты жарықпен безендіру">
+              <img src="assets/works/theatre.jpg" alt="Световое оформление здания">
+            </button>
+            <div class="work-content">
+              <span data-i18n="work.light.type">Подсветка</span>
+              <h3 data-i18n="work.theatre.title">Световое оформление здания</h3>
+              <p data-i18n="work.theatre.text">Подсветка фасада и архитектурных элементов.</p>
+              <a href="#quiz" data-i18n="work.cta">Хочу похожее</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="container quiz-layout">
+        <div class="quiz-copy reveal">
+          <div class="eyebrow"><span></span><b data-i18n="quiz.eyebrow">Заявка</b></div>
+          <h2 data-i18n="quiz.title">Быстрый квиз для расчета</h2>
+          <p data-i18n="quiz.text">Ответьте на несколько вопросов, и заявка уйдет в WhatsApp. В сообщении нет строк “Телефон” и “Цена”.</p>
+          <div class="quiz-note" data-i18n="quiz.note">Расчет индивидуальный: менеджер уточнит детали по WhatsApp или звонку.</div>
+        </div>
+
+        <form class="quiz-card reveal tilt" id="quizForm" data-form="quiz">
+          <div class="quiz-progress"><i id="quizProgress"></i></div>
+
+          <div class="quiz-step active" data-step="1">
+            <span class="step-label" data-i18n="quiz.step1">Шаг 1 из 5</span>
+            <h3 data-i18n="quiz.q1">Что нужно изготовить?</h3>
+            <select name="service" required>
+              <option value="" data-i18n="quiz.select">Выберите услугу</option>
+              <option data-i18n="quiz.opt.sign">Вывеска</option>
+              <option data-i18n="quiz.opt.letters">Объемные буквы</option>
+              <option data-i18n="quiz.opt.banner">Баннер</option>
+              <option data-i18n="quiz.opt.uv">УФ-печать</option>
+              <option data-i18n="quiz.opt.canvas">Фото на холсте</option>
+              <option data-i18n="quiz.opt.wide">Широкоформатная печать</option>
+              <option data-i18n="quiz.opt.cnc">Фрезерная / лазерная резка</option>
+              <option data-i18n="quiz.opt.other">Другое</option>
+            </select>
+          </div>
+
+          <div class="quiz-step" data-step="2">
+            <span class="step-label" data-i18n="quiz.step2">Шаг 2 из 5</span>
+            <h3 data-i18n="quiz.q2">Есть размеры?</h3>
+            <input type="text" name="size" data-i18n-placeholder="quiz.sizePlaceholder" placeholder="Например: 2×1 м, А3, 3 метра, не знаю">
+          </div>
+
+          <div class="quiz-step" data-step="3">
+            <span class="step-label" data-i18n="quiz.step3">Шаг 3 из 5</span>
+            <h3 data-i18n="quiz.q3">Нужен монтаж?</h3>
+            <div class="radio-grid">
+              <label><input type="radio" name="mount" value="Да"> <span data-i18n="quiz.yes">Да</span></label>
+              <label><input type="radio" name="mount" value="Нет"> <span data-i18n="quiz.no">Нет</span></label>
+              <label><input type="radio" name="mount" value="Пока не знаю"> <span data-i18n="quiz.unknown">Пока не знаю</span></label>
+            </div>
+          </div>
+
+          <div class="quiz-step" data-step="4">
+            <span class="step-label" data-i18n="quiz.step4">Шаг 4 из 5</span>
+            <h3 data-i18n="quiz.q4">Есть макет или пример?</h3>
+            <div class="radio-grid">
+              <label><input type="radio" name="layout" value="Есть готовый макет"> <span data-i18n="quiz.layoutReady">Есть макет</span></label>
+              <label><input type="radio" name="layout" value="Есть пример"> <span data-i18n="quiz.layoutExample">Есть пример</span></label>
+              <label><input type="radio" name="layout" value="Нужен дизайн"> <span data-i18n="quiz.layoutDesign">Нужен дизайн</span></label>
+            </div>
+          </div>
+
+          <div class="quiz-step" data-step="5">
+            <span class="step-label" data-i18n="quiz.step5">Шаг 5 из 5</span>
+            <h3 data-i18n="quiz.q5">Имя и комментарий</h3>
+            <input type="text" name="name" data-i18n-placeholder="quiz.namePlaceholder" placeholder="Ваше имя" required>
+            <textarea name="message" data-i18n-placeholder="quiz.messagePlaceholder" placeholder="Комментарий: сроки, материал, адрес, пожелания"></textarea>
+          </div>
+
+          <div class="quiz-controls">
+            <button type="button" class="btn btn-muted magnetic" id="prevStep" data-i18n="quiz.back">Назад</button>
+            <button type="button" class="btn btn-gold magnetic" id="nextStep" data-i18n="quiz.next">Дальше</button>
+            <button type="submit" class="btn btn-gold magnetic" id="submitQuiz" data-i18n="quiz.submit">Отправить в WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section production" id="production">
+      <div class="container production-layout">
+        <div class="production-card reveal tilt">
+          <img src="assets/works/uv_tiles.jpg" alt="УФ-печать">
+        </div>
+        <div class="production-copy reveal">
+          <div class="eyebrow"><span></span><b data-i18n="production.eyebrow">Производство</b></div>
+          <h2 data-i18n="production.title">Оборудование и возможности</h2>
+          <div class="equipment-grid">
+            <div><i></i><span data-i18n="production.uv">УФ-печать</span></div>
+            <div><i></i><span data-i18n="production.wide">Широкоформатная печать</span></div>
+            <div><i></i><span data-i18n="production.cnc">Фрезерный станок</span></div>
+            <div><i></i><span data-i18n="production.laser">Лазерный станок</span></div>
+            <div><i></i><span data-i18n="production.design">Дизайн макетов</span></div>
+            <div><i></i><span data-i18n="production.mount">Монтаж</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="container faq-layout">
+        <div class="reveal">
+          <div class="eyebrow"><span></span><b data-i18n="faq.eyebrow">Вопросы</b></div>
+          <h2 data-i18n="faq.title">Коротко и по делу</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details open>
+            <summary data-i18n="faq.q1">Почему нет прайса?</summary>
+            <p data-i18n="faq.a1">Потому что стоимость зависит от размера, материала, подсветки, тиража, монтажа и сложности.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q2">Можно отправить фото или пример?</summary>
+            <p data-i18n="faq.a2">Да. После перехода в WhatsApp можно прикрепить фото, макет, пример или размеры.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q3">Можно заказать только дизайн?</summary>
+            <p data-i18n="faq.a3">Да, можно заказать разработку макета отдельно или вместе с изготовлением.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.q4">Где находится Архстрой?</summary>
+            <p data-i18n="faq.a4">Петропавловск, улица Карима Сутюшева, 55. Есть ссылка на 2GIS в контактах.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal">
+          <div class="eyebrow"><span></span><b data-i18n="contacts.eyebrow">Контакты</b></div>
+          <h2 data-i18n="contacts.title">Связаться с ТОО «Архстрой»</h2>
+          <div class="contact-list">
+            <a href="tel:+77776557272"><i></i>+7 777 655 72 72</a>
+            <a href="https://wa.me/77776557272" target="_blank"><i></i>WhatsApp</a>
+            <a href="https://www.instagram.com/arhstroy.kz?igsh=OXFvaGNhbzVrcXAx&utm_source=qr" target="_blank"><i></i>Instagram @arhstroy.kz</a>
+            <a href="mailto:arhstroi@mail.ru"><i></i>arhstroi@mail.ru</a>
+            <a href="https://go.2gis.com/9t8jW" target="_blank"><i></i><span data-i18n="contacts.address">Сутюшева 55, Петропавловск</span></a>
+            <p><i></i><span data-i18n="contacts.hours">Понедельник — пятница, 09:00–18:00</span></p>
+          </div>
+        </div>
+
+        <div class="map-card reveal tilt">
+          <h3 data-i18n="map.title">Быстрые ссылки</h3>
+          <p data-i18n="map.text">Открыть компанию в 2GIS или посмотреть работы в Instagram.</p>
+          <a class="btn btn-gold full magnetic" href="https://go.2gis.com/9t8jW" target="_blank" data-i18n="map.2gis">Открыть 2GIS</a>
+          <a class="btn btn-glass full magnetic" href="https://www.instagram.com/arhstroy.kz?igsh=OXFvaGNhbzVrcXAx&utm_source=qr" target="_blank" data-i18n="map.instagram">Открыть Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">×</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Предыдущее">‹</button>
+    <img id="lightboxImg" alt="">
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Следующее">›</button>
+    <p id="lightboxTitle"></p>
+  </div>
+
+  <div class="sticky-actions">
+    <a href="tel:+77776557272" data-i18n="sticky.call">Позвонить</a>
+    <a href="https://wa.me/77776557272" target="_blank">WhatsApp</a>
+    <a href="https://www.instagram.com/arhstroy.kz?igsh=OXFvaGNhbzVrcXAx&utm_source=qr" target="_blank">Instagram</a>
+    <a href="https://go.2gis.com/9t8jW" target="_blank">2GIS</a>
+  </div>
+
+  <div class="mobile-bar">
+    <a href="tel:+77776557272" data-i18n="mobile.call">Позвонить</a>
+    <a href="https://wa.me/77776557272" target="_blank">WhatsApp</a>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p data-i18n="footer.copy">© 2026 ТОО «Архстрой». Наружная реклама, печать и производство.</p>
+      <a href="#home" data-i18n="footer.top">Наверх</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
